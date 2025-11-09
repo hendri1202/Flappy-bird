@@ -126,8 +126,8 @@ function setupEventListeners() {
 }
 
 function handleJump() {
-    if (!gameStarted) {
-        startGame();
+    if (!gameStarted || gameOver) {
+        restartGame();
     } else if (!gameOver) {
         velocity = jump;
         playJumpSound();
