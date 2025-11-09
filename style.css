@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 4px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+#gameCanvas {
+    display: block;
+    background: linear-gradient(to bottom, #87CEEB, #98D8E8);
+}
+
+#uiOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+}
+
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    pointer-events: auto;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    color: #f39c12;
+}
+
+.instructions {
+    margin: 15px 0;
+    color: #ecf0f1;
+}
